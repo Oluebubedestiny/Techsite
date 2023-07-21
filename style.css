@@ -122,6 +122,9 @@ nav {
   box-shadow: var(--box-shadow);
 }
 @media (max-width: 991px) {
+  .img_container.hide {
+    display: none;
+  }
   .toggle_btn {
     display: block;
   }
@@ -129,21 +132,25 @@ nav {
     display: none;
     width: 100%;
     border-top: 1px solid #000;
+    padding: 2rem;
     padding-top: 20px;
-    margin-top: 100px;
+    margin-top: 80px;
   }
-
-  .nav_toggle_btn.nav_items ul li {
-    padding: 15px 8px;
-    width: 100%;
-    display: inline-block;
+  .nav_items .nav_bar_container {
+    display: flex;
+    flex-direction: column;
   }
   .nav_toggle_btn.show {
     display: block;
+    background-color: var(--primary-color);
+    align-items: center;
   }
-  .search_container {
+  #search {
     position: relative;
-    right: 8rem;
+    width: 17rem;
+  }
+  #search:hover {
+    width: 18rem;
   }
 }
 /* end of navbar */

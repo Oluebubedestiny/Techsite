@@ -9,5 +9,7 @@ window.addEventListener("scroll", () => {
 
 toggle.addEventListener("click", function () {
   var navbar = document.querySelector(".nav_toggle_btn");
+  const logo = document.querySelector(".img_container");
   navbar.classList.toggle("show");
+  logo.classList.toggle("hide");
 });
