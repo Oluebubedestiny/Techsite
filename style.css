@@ -700,6 +700,7 @@ input {
     display: block;
     align-items: center;
   }
+
   .line_two {
     border: none;
   }
@@ -765,6 +766,7 @@ input {
 /* end of contact */
 #footer {
   width: 100vw;
+
   background-color: #000;
   box-shadow: var(--box-shadow);
 }
@@ -798,7 +800,8 @@ input {
 }
 @media screen and (max-width: 600px) {
   #footer {
-    height: 80vh;
+    /* height: 80vh; */
+    margin-top: 10rem;
   }
   .footer_content {
     display: block;
